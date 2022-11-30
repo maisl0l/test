@@ -1,7 +1,8 @@
 #!/bin/bash
 
 df -h
-sudo pacman -Scc
-sudo pacman -Rns $(pacman -Qtdq)
+sudo pacman -Scc --noconfirm
+sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 sudo rm -rf ~/.cache*
 df -h
+echo sex sex sex
